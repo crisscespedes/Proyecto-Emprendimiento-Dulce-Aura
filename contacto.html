@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - CandyKat</title>
+</head>
+<body>
+    <header>
+        <h1>Candy_Kat</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contáctanos</h2>
+            <p>Envíanos un mensaje para pedidos especiales en la Feria Barrio Lindo.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    <label for="correo">Correo electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>¿En qué podemos ayudarte?</legend>
+                    <label for="asunto">Motivo:</label><br>
+                    <select id="asunto" name="asunto">
+                        <option value="pedido">Pedido al por mayor</option>
+                        <option value="queja">Sugerencias</option>
+                        <option value="otro">Otros</option>
+                    </select>
+                    <br><br>
+                    <label for="mensaje">Tu mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe aquí tu consulta..."></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit">Enviar Formulario</button>
+                <button type="reset">Limpiar datos</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feria Barrio Lindo, Santa Cruz | Tel: 69129091</p>
+    </footer>
+</body>
+</html>
