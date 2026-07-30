@@ -2,109 +2,144 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CandyKat - Tienda de Golosinas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Aura - Tienda de Golosinas</title>
+    <!-- Vinculación del archivo CSS externo -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Candy_Kat</h1>
+    <!-- Encabezado Principal -->
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo">Dulce <span>Aura</span></h1>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="carrito.html">🛒 Carrito</a></li>
-            </ul>
-        </nav>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="catalogo.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html" class="btn-cart">🛒 Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <img src="images/banner_candy_kat.png" alt="Banner promocional de dulces" width="100%">
-            <h2>Nuestro Negocio: Golosinas</h2>
+        <!-- Banner Principal -->
+        <section class="hero-banner">
+            <img src="images/banner_dulce_aura.jpg" alt="Banner promocional Dulce Aura" class="banner-img">
+            <div class="hero-title">
+                <h2>Nuestro Negocio: Golosinas</h2>
+            </div>
         </section>
 
-        <section>
-            <h2>Un liderazgo dulce en Santa Cruz</h2>
-            <p>CandyKat es el emprendimiento que nace para endulzar a las familias bolivianas. Ofrecemos variedad, calidad y precios económicos.</p>
-            <img src="images/dulces_surtidos1.webp" alt="Surtido de dulces CandyKat">
+        <!-- Sección de Presentación -->
+        <section class="about-section container">
+            <div class="about-text">
+                <h2>Un liderazgo dulce en Santa Cruz</h2>
+                <p>Dulce Aura es el emprendimiento que nace para endulzar a las familias bolivianas. Ofrecemos variedad, calidad y precios súper económicos.</p>
+            </div>
+            <div class="about-img">
+                <img src="images/dulces_surtidos1.webp" alt="Surtido de dulces Dulce Aura">
+            </div>
         </section>
 
-        <section>
-            <h2>Productos Destacados</h2>
+        <!-- Productos Destacados -->
+        <section class="products-section container">
+            <h2 class="section-title">Productos Destacados</h2>
 
-            <article>
-                <a href="catalogo.html">
-                    <img src="images/bonbum.webp" alt="Chupete Bon Bon Bum">
-                </a>
-                <h3>Bon Bon Bum Surtidos</h3>
-                <p>Bolsa de 24 unidades sabores surtidos. Bs. 20</p>
-            </article>
+            <div class="products-grid">
+                <article class="product-card">
+                    <a href="catalogo.html" class="product-img-wrapper">
+                        <img src="images/bonbum.webp" alt="Chupete Bon Bon Bum">
+                    </a>
+                    <h3>Bon Bon Bum Surtidos</h3>
+                    <p class="description">Bolsa de 24 unidades sabores surtidos.</p>
+                    <span class="price">Bs. 20</span>
+                    <a href="catalogo.html" class="btn-buy">Ver producto</a>
+                </article>
 
-            <article>
-                <a href="catalogo.html">
-                    <img src="images/oreo_familiar1.png" alt="Galletas Oreo">
-                </a>
-                <h3>Oreo Familiar</h3>
-                <p>Paquete con 6 paquetes individuales. Bs. 20</p>
-            </article>
+                <article class="product-card">
+                    <a href="catalogo.html" class="product-img-wrapper">
+                        <img src="images/oreo_familiar1.png" alt="Galletas Oreo">
+                    </a>
+                    <h3>Oreo Familiar</h3>
+                    <p class="description">Paquete con 6 paquetes individuales.</p>
+                    <span class="price">Bs. 20</span>
+                    <a href="catalogo.html" class="btn-buy">Ver producto</a>
+                </article>
 
-            <article>
-                <a href="catalogo.html">
-                    <img src="images/doblon_30u.jpg" alt="Chocolate Doblon">
-                </a>
-                <h3>Doblon de Costa</h3>
-                <p>Bolsa con 30 unidades. Bs. 26</p>
-            </article>
+                <article class="product-card">
+                    <a href="catalogo.html" class="product-img-wrapper">
+                        <img src="images/doblon_30u.jpg" alt="Chocolate Doblon">
+                    </a>
+                    <h3>Doblón de Costa</h3>
+                    <p class="description">Bolsa con 30 unidades.</p>
+                    <span class="price">Bs. 26</span>
+                    <a href="catalogo.html" class="btn-buy">Ver producto</a>
+                </article>
 
-            <article>
-                <a href="catalogo.html">
-                    <img src="images/caramelos_watts1.webp" alt="Caramelos Watts">
-                </a>
-                <h3>Caramelos Watt's</h3>
-                <p>Bolsa de 60 unidades. Bs. 25</p>
-            </article>
+                <article class="product-card">
+                    <a href="catalogo.html" class="product-img-wrapper">
+                        <img src="images/caramelos_watts1.webp" alt="Caramelos Watts">
+                    </a>
+                    <h3>Caramelos Watt's</h3>
+                    <p class="description">Bolsa de 60 unidades.</p>
+                    <span class="price">Bs. 25</span>
+                    <a href="catalogo.html" class="btn-buy">Ver producto</a>
+                </article>
+            </div>
         </section>
 
-        <section>
-            <h2>Nuestras Marcas Aliadas</h2>
-            <img src="images/arcor_marca.jpeg" alt="Marca Arcor">
-            <img src="images/la_estrella_marca.png" alt="Marca La Estrella">
-            <img src="images/nestle_marca.png" alt="Marca Nestlé">
-            <img src="images/watts_marca.png" alt="Marca Nestlé">
+        <!-- Marcas Aliadas -->
+        <section class="brands-section container">
+            <h2 class="section-title">Nuestras Marcas Aliadas</h2>
+            <div class="brands-grid">
+                <img src="images/arcor_marca.jpeg" alt="Marca Arcor">
+                <img src="images/la_estrella_marca.png" alt="Marca La Estrella">
+                <img src="images/nestle_marca.png" alt="Marca Nestlé">
+                <img src="images/watts_marca.png" alt="Marca Watt's">
+            </div>
         </section>
     </main>
 
-   <footer>
-    <h4>Direccion:</h4>
-    <address>
-        <p>Feria Barrio Lindo, Pasillo N, #369, Santa Cruz, Bolivia</p>
-    </address>
+    <!-- Pie de Página -->
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-info">
+                <h4>Dirección</h4>
+                <address>
+                    <p>Feria Barrio Lindo, Pasillo N, #369, Santa Cruz, Bolivia</p>
+                </address>
+            </div>
 
-    <section>
-        <h4>Síguenos en nuestras redes:</h4>
-        <ul>
-            <li>
-                <a href="https://www.tiktok.com/@katherinyagualcat" target="_blank">
-                    <img src="images/tiktok.svg" alt="Tiktok" width="30">
-                </a>
-            </li>
-            <li>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.svg" alt="Instagram" width="30">
-                </a>
-            </li>
-            <li>
-                <a href="https://wa.me/59163456963" target="_blank">
-                    <img src="images/whatsapp.svg" alt="WhatsApp" width="30">
-                </a>
-            </li>
-        </ul>
-    </section>
+            <div class="footer-social">
+                <h4>Síguenos en nuestras redes:</h4>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.tiktok.com/@katherinyagualcat" target="_blank" aria-label="TikTok">
+                            <img src="images/tiktok.svg" alt="Tiktok">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <img src="images/instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/59163456963" target="_blank" aria-label="WhatsApp">
+                            <img src="images/whatsapp.svg" alt="WhatsApp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <p>&copy; 2026 Candy_Kat - Todos los derechos reservados.</p>
-</footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dulce Aura - Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -1,0 +1,323 @@
+/* ==========================================================================
+   1. ESTILOS GENERALES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf9f5;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   2. ENCABEZADO Y NAVEGACIÓN
+   ========================================================================== */
+.main-header {
+    background-color: #0b5e28; /* Verde intenso */
+    border-bottom: 4px solid #f5b041; /* Dorado */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2.2rem;
+    color: #DAA520;
+}
+
+.logo span {
+    color: #ff4081; /* Rosa */
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffd700; /* Dorado brillante */
+}
+
+.main-nav .btn-cart {
+    background-color: #ff4081; /* Rosa */
+    color: #ffffff;
+}
+
+.main-nav .btn-cart:hover {
+    background-color: #e0356f;
+}
+
+/* ==========================================================================
+   3. BANNER PRINCIPAL
+   ========================================================================== */
+.hero-banner {
+    position: relative;
+    text-align: center;
+    background-color: #0b5e28;
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-title {
+    background-color: #138844;
+    color: #ffffff;
+    padding: 20px;
+    border-bottom: 3px solid #f5b041;
+}
+
+.hero-title h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+/* ==========================================================================
+   4. SECCIÓN SOBRE NOSOTROS
+   ========================================================================== */
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    border-left: 8px solid #ff4081; /* Rosa */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-text h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #0b5e28;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #666666;
+    font-size: 1.1rem;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+/* ==========================================================================
+   5. PRODUCTOS DESTACADOS
+   ========================================================================== */
+.products-section {
+    margin: 60px auto;
+}
+
+.section-title {
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #0b5e28;
+    margin-bottom: 40px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: 2px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    border-color: #f5b041;
+}
+
+.product-img-wrapper img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #0b5e28;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.product-card .description {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff4081; /* Rosa */
+    margin-bottom: 15px;
+}
+
+.btn-buy {
+    display: inline-block;
+    background-color: #138844;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn-buy:hover {
+    background-color: #0b5e28;
+}
+
+/* ==========================================================================
+   6. MARCAS ALIADAS
+   ========================================================================== */
+.brands-section {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.brands-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.brands-grid img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* ==========================================================================
+   7. PIE DE PÁGINA (FOOTER)
+   ========================================================================== */
+.main-footer {
+    background-color: #0b5e28;
+    color: #ffffff;
+    padding-top: 40px;
+    margin-top: 80px;
+    border-top: 5px solid #ff4081;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-info h4,
+.footer-social h4 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #ffd700;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.footer-info address {
+    font-style: normal;
+    color: #e0e0e0;
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+/* Adaptabilidad a celulares */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
