@@ -2,64 +2,125 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Catálogo - CandyKat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Dulce Aura</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Candy_Kat</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="carrito.html">🛒 Carrito</a></li>
-            </ul>
-        </nav>
+
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo">Dulce <span>Aura</span></h1>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html" class="active">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html" class="btn-cart">🛒 Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Nuestras Delicias</h2>
-            
-            <article>
-                <img src="images/bonbum.webp" alt="Chupete Bon Bon Bum">
-                <h3>Bon Bon Bum Surtidos</h3>
-                <p>Bolsa de 24 unidades sabores surtidos. Bs. 20</p>
-                <button type="button">Añadir al carrito</button>
-            </article>
+        <section class="page-title">
+            <h2 class="section-title">Nuestras Delicias</h2>
+        </section>
 
-            <article>
-                <img src="images/oreo_familiar1.png" alt="Galletas Oreo">
-                <h3>Oreo Familiar</h3>
-                <p>Paquete con 6 paquetes individuales. Bs. 20</p>
-                <button type="button">Añadir al carrito</button>
-            </article>
+        <section class="catalog-section container">
+            <div class="catalog-layout">
 
-            <article>
-                <img src="images/doblon_30u.jpg" alt="Chocolate Doblon">
-                <h3>Doblon de Costa</h3>
-                <p>Bolsa con 30 unidades. Bs. 26</p>
-                <button type="button">Añadir al carrito</button>
-            </article>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/bonbum.webp" alt="Chupete Bon Bon Bum">
+                        </div>
+                        <h3>Bon Bon Bum Surtidos</h3>
+                        <p class="description">Bolsa de 24 unidades sabores surtidos.</p>
+                        <span class="price">Bs. 20</span>
+                        <button type="button" class="btn-buy">Añadir al carrito</button>
+                    </article>
 
-            <article>
-                <img src="images/caramelos_watts1.webp" alt="Caramelos Watts">
-                <h3>Caramelos Watt's</h3>
-                <p>Bolsa de 60 unidades. Bs. 25</p>
-                <button type="button">Añadir al carrito</button>
-            </article>
+                    <article class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/oreo_familiar1.png" alt="Galletas Oreo">
+                        </div>
+                        <h3>Oreo Familiar</h3>
+                        <p class="description">Paquete con 6 paquetes individuales.</p>
+                        <span class="price">Bs. 20</span>
+                        <button type="button" class="btn-buy">Añadir al carrito</button>
+                    </article>
 
-        <aside>
-            <h2>Tu Carrito (0)</h2>
-            <p>Tus productos seleccionados aparecerán aquí.</p>
-            <hr>
-            <p><strong>Total: Bs. 0.00</strong></p>
-            <button type="button">Confirmar Pedido</button>
-        </aside>
+                    <article class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/doblon_30u.jpg" alt="Chocolate Doblon">
+                        </div>
+                        <h3>Doblón de Costa</h3>
+                        <p class="description">Bolsa con 30 unidades.</p>
+                        <span class="price">Bs. 26</span>
+                        <button type="button" class="btn-buy">Añadir al carrito</button>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="images/caramelos_watts1.webp" alt="Caramelos Watts">
+                        </div>
+                        <h3>Caramelos Watt's</h3>
+                        <p class="description">Bolsa de 60 unidades.</p>
+                        <span class="price">Bs. 25</span>
+                        <button type="button" class="btn-buy">Añadir al carrito</button>
+                    </article>
+                </div>
+
+                <aside class="cart-summary">
+                    <h2>Tu Carrito (0)</h2>
+                    <p>Tus productos seleccionados aparecerán aquí.</p>
+                    <hr>
+                    <p class="cart-total"><strong>Total: Bs. 0.00</strong></p>
+                    <button type="button" class="btn-buy">Confirmar Pedido</button>
+                </aside>
+
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Candy_Kat - Santa Cruz, Bolivia</p>
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-info">
+                <h4>Dirección</h4>
+                <address>
+                    <p>Feria Barrio Lindo, Pasillo N, #369, Santa Cruz, Bolivia</p>
+                    <p>Tel / WhatsApp: 69129091</p>
+                </address>
+            </div>
+
+            <div class="footer-social">
+                <h4>Síguenos en nuestras redes:</h4>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.tiktok.com/@katherinyagualcat" target="_blank" aria-label="TikTok">
+                            <img src="images/tiktok.svg" alt="Tiktok">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <img src="images/instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/59169129091" target="_blank" aria-label="WhatsApp">
+                            <img src="images/whatsapp.svg" alt="WhatsApp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dulce Aura - Todos los derechos reservados.</p>
+        </div>
     </footer>
+
 </body>
 </html>

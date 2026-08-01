@@ -44,7 +44,7 @@ body {
 .logo {
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 2.2rem;
-    color: #DAA520;
+    color: #ffffff;
 }
 
 .logo span {
@@ -84,31 +84,67 @@ body {
 
 /* ==========================================================================
    3. BANNER PRINCIPAL
+   Recreado con CSS puro, inspirado en el letrero verde real de la tienda:
+   fondo verde oscuro, borde dorado, título elegante y línea de etiquetas.
    ========================================================================== */
 .hero-banner {
-    position: relative;
+    /* Degradado sutil para dar profundidad, en vez de un verde plano */
+    background: linear-gradient(135deg, #0b3d2e 0%, #0b5e28 60%, #0e6b30 100%);
+    border-top: 4px solid #f5b041;
+    border-bottom: 4px solid #f5b041;
+    padding: 45px 20px;
     text-align: center;
-    background-color: #0b5e28;
+    overflow: hidden;
+    position: relative;
 }
 
-.banner-img {
-    width: 100%;
-    max-height: 420px;
-    object-fit: cover;
-    display: block;
+.banner-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
 }
 
-.hero-title {
-    background-color: #138844;
+/* Líneas doradas en ángulo, como el chevron "<<" del letrero original */
+.banner-chevron {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-left: 4px solid #f5b041;
+    border-bottom: 4px solid #f5b041;
+    transform: rotate(45deg);
+    margin-bottom: -10px;
+    opacity: 0.85;
+}
+
+.banner-title {
+    font-family: 'Playfair Display', 'Trebuchet MS', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+    margin: 10px 0 15px;
+    /* "Dulce" en dorado, con un ligero relieve para imitar el letrero */
+    color: #f5c94a;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+}
+
+/* "Aura" resaltado en rosa/rojo, tal como en el letrero físico */
+.banner-title span {
+    color: #ff5c7a;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35), 0 0 1px #ffffff;
+}
+
+.banner-tagline {
     color: #ffffff;
-    padding: 20px;
-    border-bottom: 3px solid #f5b041;
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.hero-title h2 {
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color: #ffd700;
+.banner-tagline .dot {
+    color: #f5b041;
+    margin: 0 6px;
 }
 
 /* ==========================================================================
@@ -250,7 +286,238 @@ body {
 }
 
 /* ==========================================================================
-   7. PIE DE PÁGINA (FOOTER)
+   7. TÍTULO DE PÁGINA (usado en contacto, catálogo y carrito)
+   ========================================================================== */
+.page-title {
+    text-align: center;
+    padding: 50px 20px 10px;
+}
+
+.page-subtitle {
+    color: #666666;
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: -20px auto 0;
+}
+
+/* ==========================================================================
+   8. FORMULARIO DE CONTACTO
+   ========================================================================== */
+.contact-section {
+    max-width: 700px;
+    margin: 40px auto 80px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form fieldset {
+    border: none;
+    border-left: 6px solid #ff4081;
+    background-color: #faf9f5;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+}
+
+.contact-form legend {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #0b5e28;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #f5b041;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #0b5e28;
+    border: 2px solid #0b5e28;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #0b5e28;
+    color: #ffffff;
+}
+
+.contact-form .btn-buy {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* ==========================================================================
+   9. CATÁLOGO Y CARRITO LATERAL
+   ========================================================================== */
+.catalog-section {
+    margin: 20px auto 80px;
+}
+
+.catalog-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.cart-summary {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid #f5b041;
+    position: sticky;
+    top: 100px;
+}
+
+.cart-summary h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #0b5e28;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.cart-summary p {
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+.cart-summary hr {
+    border: none;
+    border-top: 2px solid #f0f0f0;
+    margin: 15px 0;
+}
+
+.cart-total {
+    color: #2c3e50 !important;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.cart-summary .btn-buy {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.catalog-section .btn-buy {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+/* ==========================================================================
+   10. TABLA DEL CARRITO
+   ========================================================================== */
+.cart-section {
+    margin: 40px auto 80px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cart-table th {
+    background-color: #0b5e28;
+    color: #ffffff;
+    text-align: left;
+    padding: 14px 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.cart-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cart-table tbody tr:hover {
+    background-color: #faf9f5;
+}
+
+.cart-table tfoot td {
+    font-weight: bold;
+    color: #0b5e28;
+    font-size: 1.1rem;
+    border-bottom: none;
+    background-color: #faf9f5;
+}
+
+.cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.cart-actions .btn-buy {
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-secondary-link {
+    color: #0b5e28;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-secondary-link:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   11. PIE DE PÁGINA (FOOTER)
    ========================================================================== */
 .main-footer {
     background-color: #0b5e28;
@@ -319,5 +586,23 @@ body {
 
     .social-links {
         justify-content: center;
+    }
+
+    .catalog-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-summary {
+        position: static;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .cart-actions {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
     }
 }
