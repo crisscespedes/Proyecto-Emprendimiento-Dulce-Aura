@@ -1,4 +1,6 @@
-/*0. Variables globales*/
+/* =====================================================================
+    0. Variables globales
+   =====================================================================*/ 
 :root {
   /* Colores de la paleta */
   --verde-900: #011509;
@@ -17,8 +19,6 @@
   --color-texto-suave: var(--gris-300);
   --color-primario:    var(--rosa-500);
   --color-acento:      var(--naranja-500);
-
-  /* Sombra compartida (más oscura porque el fondo es oscuro) */
   --sombra: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
@@ -60,7 +60,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 70px 15px 30px;
+    padding: 15px 70px 15px 60px;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -339,7 +339,14 @@ body {
     max-width: 600px;
     margin: -20px auto 0;
 }
+.cta-section {
+    text-align: center;
+    margin: 60px auto;
+}
 
+.cta-section .btn-buy {
+    margin: 0 8px;
+}
 /* ==========================================================================
    8. FORMULARIO DE CONTACTO
    ========================================================================== */
