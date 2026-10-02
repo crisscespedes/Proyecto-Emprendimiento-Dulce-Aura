@@ -11,7 +11,7 @@
   --naranja-500: #FA9D18;
   --gris-300:  #B7BEBE;
 
-  /* Roles: qué hace cada color en la página */
+  /* Roles */
   --color-fondo:       var(--verde-900);
   --color-superficie:  var(--verde-800);
   --color-borde:       var(--verde-600);
